@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*START OF NAV STYLING*/
+.navbar-brand{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 6vw !important;
+}
+.navbar-nav{
+    margin-left: auto; /*makes navbar items align to the right*/
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+/*END OF NAV STYLING*/
+
+/*START OF MEDIA HEADER STYLING*/
+.media-use-heading{
+    padding-top: 200px;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2vw;
+}
+/*END OF MEDIA HEADER STYLING*/
+
+/*START OF GALLERY STYLING*/
+
+.container{
+    max-width: 1224px;
+    width: 100%;
+    margin: auto;
+    padding-top: 250px; /*this line originally was padding: 40px 0; (and there was no padding-bottom)*/ /*YOU HAVE TO MAKE THIS MORE RESPONSIVE MORE MEDIA QUERIES OR SEARCH UP BOOTSTRAP NAVBAR HOW TO AVOID CLASHING*/
+    padding-bottom: 25px;
+}
+.private-container{
+    max-width: 1224px;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px; /*reduced padding because h1 does the job*/
+    padding-bottom: 25px;
+}
+
+.photo-gallery {
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.photo img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    /*display block removes white space underneath images*/
+}
+
+.photo img{
+    transition: .25s;
+}
+.photo img:hover{
+    filter: invert(80%);
+    /*this is where you can make images bigger with transform: scale(1.07);*/
+}
+
+.videothumbnail img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.videothumbnail{
+    overflow: hidden;
+    position: relative;
+}
+
+.videothumbnail img{
+    transition: transform .3s ease;
+}
+
+.videothumbnail:hover img {
+    transform: scale(1.1);
+  }
+
+.playbutton{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.521);
+    opacity: 0;
+    transition: .3s;
+}
+
+.playbutton:hover{
+    opacity: 1;
+}
+
+
+/*END OF GALLERY STYLING*/
+
+/*START OF MEDIA HEADER STYLING*/
+.media-use-heading{
+    padding-top: 200px;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2vw;
+}
+/*END OF MEDIA HEADER STYLING*/
+
+/*START OF BEFORE AFTER STYLING*/
+  
+.image-comparison {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.image-comparison img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  
+.image-comparison .images-container {
+    position: relative;
+    display: flex;
+}
+  
+.image-comparison .images-container .before-image {
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+  
+.image-comparison .slider {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.image-comparison .slider-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.image-comparison .slider-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    transform: translate(-50%, -50%) rotateZ(90deg);
+}
+  
+/*END OF BEFORE AFTER STYLING*/
+
+/*START OF FRIDA STYLING*/
+.frida {
+    
+    padding-top: 1700px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.7)),url(/afp_images/FLORES_photographs/FLORES_Frida_forwebsite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*END OF FRIDA STYLING*/
+
+@media(max-width:768px){
+    .photo-gallery{
+        flex-direction: column;
+        /*this makes the masonry grid go into one column on mobile*/
+    }
+    .container{
+        padding-top: 80px;
+    }
+    .media-use-heading{
+        padding-top: 100px;
+        font-size: 3vw;
+    }
+}
+
+/*START OF CONTACT STYLING*/
+.contact-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vw;
+    padding-top: calc(5.5rem + 100px);
+    max-width: 50vw;  /* Limit container width */
+    background-color: white;
+    border-radius: 8px;
+  }
+
+h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3vw !important;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+
+/*END OF CONTACT STYLING*/
+
+@media(min-width:1730px){
+.media-use-heading{
+    padding-top:300px;
+}
+}
+
+display: flex;
+  justify-content: center;
+  align-items: center;
