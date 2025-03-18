@@ -227,6 +227,19 @@ p {
 
 /*START OF STUDIO RENTAL STYLING*/
 
+.eqlightbox {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color the same as surrounding text */
+    display: block; /* Ensures it behaves like a div */
+    border-bottom: 1px solid #ddd;
+}
+
+.eqlightbox:hover {
+    font-weight: bold; /* Makes text bold on hover */
+    color: black; /* Change this to any color you want */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
 .studiodesc-container {
     display: flex;
     justify-content: space-between;
@@ -357,7 +370,7 @@ p {
     color: black; /* Blue color for the link */
     font-weight: bold;
     display: inline-block; /* Ensures the scaling works properly */
-  animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
 .email-link:hover {
