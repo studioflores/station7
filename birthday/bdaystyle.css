@@ -28,6 +28,7 @@ body{
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Align to the top */
     min-height: 100vh; /* Take the full height of the viewport */
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
 .berlin{
