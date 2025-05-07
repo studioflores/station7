@@ -15,12 +15,8 @@ body, html {
   display: flex;
 }
 
-html{
-  scroll-padding-bottom: env(safe-area-inset-bottom);
-}
-
 .hero-container{
-  width: 100%; /* Take the full width */
+  width: 100%; 
 }
 
 body{
@@ -31,9 +27,11 @@ body{
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Align to the top */
-    padding-bottom: 50px;
+    
   }
-
+.everything{
+  padding-bottom: 90px;
+}
 .berlin{
   padding: 25px;
 }
